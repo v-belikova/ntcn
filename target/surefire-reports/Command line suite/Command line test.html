@@ -1,0 +1,194 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>23/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jun 27 14:32:53 MSK 2022</td>
+</tr>
+<tr><td>Total time:</td><td>22 seconds (22876 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='NewControllerTest.FilePostNegativeTest()'><b>FilePostNegativeTest</b><br>Test class: NewControllerTest</td>
+<td></td>
+<td>0</td>
+<td>NewControllerTest@4d9d1b69</td></tr>
+<tr>
+<td title='NewControllerTest.FilePostTest()'><b>FilePostTest</b><br>Test class: NewControllerTest</td>
+<td></td>
+<td>0</td>
+<td>NewControllerTest@4d9d1b69</td></tr>
+<tr>
+<td title='GetOneNewsTest.GetOneNegativeNotValidURLNews()'><b>GetOneNegativeNotValidURLNews</b><br>Test class: GetOneNewsTest</td>
+<td></td>
+<td>2</td>
+<td>GetOneNewsTest@49a64d82</td></tr>
+<tr>
+<td title='GetOneNewsTest.GetOneNews()'><b>GetOneNews</b><br>Test class: GetOneNewsTest</td>
+<td></td>
+<td>1</td>
+<td>GetOneNewsTest@49a64d82</td></tr>
+<tr>
+<td title='GetInfoUserTest.GetUserInfoById()'><b>GetUserInfoById</b><br>Test class: GetInfoUserTest</td>
+<td></td>
+<td>0</td>
+<td>GetInfoUserTest@36ac8a63</td></tr>
+<tr>
+<td title='GetInfoUserTest.GetUserInfoByIdNegative()'><b>GetUserInfoByIdNegative</b><br>Test class: GetInfoUserTest</td>
+<td></td>
+<td>0</td>
+<td>GetInfoUserTest@36ac8a63</td></tr>
+<tr>
+<td title='GetAllNewsTest.allNewsPageGetNegativeTest()'><b>allNewsPageGetNegativeTest</b><br>Test class: GetAllNewsTest</td>
+<td></td>
+<td>2</td>
+<td>GetAllNewsTest@251f7d26</td></tr>
+<tr>
+<td title='GetAllNewsTest.allNewsPageGetTest()'><b>allNewsPageGetTest</b><br>Test class: GetAllNewsTest</td>
+<td></td>
+<td>5</td>
+<td>GetAllNewsTest@251f7d26</td></tr>
+<tr>
+<td title='RegistrationUserTest.correctReg()'><b>correctReg</b><br>Test class: RegistrationUserTest</td>
+<td></td>
+<td>0</td>
+<td>RegistrationUserTest@344561e0</td></tr>
+<tr>
+<td title='CreateNewsTest.createNewsNegativeTest()'><b>createNewsNegativeTest</b><br>Test class: CreateNewsTest</td>
+<td></td>
+<td>0</td>
+<td>CreateNewsTest@52d10fb8</td></tr>
+<tr>
+<td title='CreateNewsTest.createNewsTest()'><b>createNewsTest</b><br>Test class: CreateNewsTest</td>
+<td></td>
+<td>0</td>
+<td>CreateNewsTest@52d10fb8</td></tr>
+<tr>
+<td title='DeleteNewsTest.deleteNewsNegativeTest()'><b>deleteNewsNegativeTest</b><br>Test class: DeleteNewsTest</td>
+<td></td>
+<td>0</td>
+<td>DeleteNewsTest@1fe8d51b</td></tr>
+<tr>
+<td title='DeleteNewsTest.deleteNewsTest()'><b>deleteNewsTest</b><br>Test class: DeleteNewsTest</td>
+<td></td>
+<td>0</td>
+<td>DeleteNewsTest@1fe8d51b</td></tr>
+<tr>
+<td title='DeleteUserTest.deleteUserNegativeTest()'><b>deleteUserNegativeTest</b><br>Test class: DeleteUserTest</td>
+<td></td>
+<td>0</td>
+<td>DeleteUserTest@41c07648</td></tr>
+<tr>
+<td title='DeleteUserTest.deleteUserTest()'><b>deleteUserTest</b><br>Test class: DeleteUserTest</td>
+<td></td>
+<td>0</td>
+<td>DeleteUserTest@41c07648</td></tr>
+<tr>
+<td title='RegistrationUserTest.incorrectEmail1()'><b>incorrectEmail1</b><br>Test class: RegistrationUserTest</td>
+<td></td>
+<td>0</td>
+<td>RegistrationUserTest@344561e0</td></tr>
+<tr>
+<td title='LoginUserTest.incorrectEmail1()'><b>incorrectEmail1</b><br>Test class: LoginUserTest</td>
+<td></td>
+<td>1</td>
+<td>LoginUserTest@77b21474</td></tr>
+<tr>
+<td title='RegistrationUserTest.incorrectPassword()'><b>incorrectPassword</b><br>Test class: RegistrationUserTest</td>
+<td></td>
+<td>0</td>
+<td>RegistrationUserTest@344561e0</td></tr>
+<tr>
+<td title='LoginUserTest.loginUserTest()'><b>loginUserTest</b><br>Test class: LoginUserTest</td>
+<td></td>
+<td>0</td>
+<td>LoginUserTest@77b21474</td></tr>
+<tr>
+<td title='PutNewsTest.putNewsNegativeTest()'><b>putNewsNegativeTest</b><br>Test class: PutNewsTest</td>
+<td></td>
+<td>0</td>
+<td>PutNewsTest@66d23e4a</td></tr>
+<tr>
+<td title='PutNewsTest.putNewsTest()'><b>putNewsTest</b><br>Test class: PutNewsTest</td>
+<td></td>
+<td>0</td>
+<td>PutNewsTest@66d23e4a</td></tr>
+<tr>
+<td title='PutUserInformationTest.putUserNegativeTest()'><b>putUserNegativeTest</b><br>Test class: PutUserInformationTest</td>
+<td></td>
+<td>0</td>
+<td>PutUserInformationTest@52c8295b</td></tr>
+<tr>
+<td title='PutUserInformationTest.putUserTest()'><b>putUserTest</b><br>Test class: PutUserInformationTest</td>
+<td></td>
+<td>0</td>
+<td>PutUserInformationTest@52c8295b</td></tr>
+</table><p>
+</body>
+</html>

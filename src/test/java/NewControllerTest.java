@@ -81,42 +81,5 @@ public class NewControllerTest {
         softAssertions.assertAll();
 
     }
-   /* @Epic("GET /v1/file/{fileName}")
-    @Feature("Positive test")
-    @Test
-    public void FileGetTest() {
-
-        request.log().all().header("Content-Type", "multipart/form-data")
-                .multiPart(new File("src/main/resources/avatar5.jpeg"));
-
-        //request.body(requestBody.toString());
-
-        Response response = request.log().all().when()
-                .post(routes.fileControl).then()
-                .contentType(ContentType.JSON).log().all().
-                extract().response();
-
-        fileName1 = response.jsonPath().getString("data");
-
-        response = request
-                .when()
-                .get(routes.getFileControl + fileName1).then()
-                .contentType(ContentType.HTML).log().all()
-                .extract().response();
-
-
-    }
-
-   /* @Epic("GET /v1/file/{fileName}")
-    @Feature("Negative test")
-    @Test
-    public void FileGetNegativeTest() {
-
-        Response response = request
-                .when()
-                .get(routes.getFileControl + fileName).then()
-                .contentType(ContentType.JSON).log().all()
-                .extract().response();
-    }*/
 
 }

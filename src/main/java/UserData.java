@@ -3,7 +3,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class UserData {
     Methods methods = new Methods();
-    private String avatar = "src/main/resources/avatar1.png";
+    private String avatar = "src/main/resources/avatar1.jpeg";
     private String email = methods.generateRandomHexString(5) + "@mail.ru";
     private String name = "hello";
     private String password = "Lokon";

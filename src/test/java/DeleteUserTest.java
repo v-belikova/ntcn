@@ -17,12 +17,14 @@ public class DeleteUserTest {
     JSONObject requestBody = new JSONObject();
     RequestSpecification request = given();
     UserData userData = new UserData();
+    Methods methods = new Methods();
 
 
     @Epic("DELETE /v1/user")
     @Feature("Positive test")
     @Test
     public void deleteUserTest() {
+
 
         requestBody.put("avatar", userData.getAvatar());
         requestBody.put("email", userData.getEmail());
@@ -65,12 +67,17 @@ public class DeleteUserTest {
     @Feature("Negative test")
     @Test
     public void deleteUserNegativeTest() {
+        String avatar1 = "src/main/resources/avatar1.jpeg";
+        String email1 = methods.generateRandomHexString(5) + "@mail.ru";
+        String name1 = "hello";
+        String password1 = "Lokon";
+        String role1 = "user";
 
-        requestBody.put("avatar", userData.getAvatar());
-        requestBody.put("email", userData.getEmail());
-        requestBody.put("name", userData.getName());
-        requestBody.put("password", userData.getPassword());
-        requestBody.put("role", userData.getRole());
+        requestBody.put("avatar", avatar1);
+        requestBody.put("email", email1);
+        requestBody.put("name", name1);
+        requestBody.put("password", password1);
+        requestBody.put("role", role1);
 
         request.header("Content-Type", "application/json");
         request.body(requestBody.toString());

@@ -16,11 +16,9 @@ public class GetOneNewsTest {
 
     SoftAssertions softAssertions = new SoftAssertions();
     Routes routes = new Routes();
-    ErrorCode errorCode = new ErrorCode();
-    Methods methods = new Methods();
     JSONObject requestBody = new JSONObject();
+    JSONObject requestBody1 = new JSONObject();
     RequestSpecification request = RestAssured.given();
-    Content content = new Content();
 
 
     @Epic("GET /v1/news/find")
@@ -30,12 +28,9 @@ public class GetOneNewsTest {
 
 
         request.header("Content-Type", "application/json");
-        request.body(requestBody.toString());
+        request.body(requestBody1.toString());
 
         Response response = request.log().all()
-                .queryParam("page", "1")
-                .queryParam("perPage", "1")
-                .queryParam("tags", "")
                 .get(routes.getOneNews)
                 .then()
                 .contentType(ContentType.JSON).log().all().extract().response();
@@ -52,6 +47,7 @@ public class GetOneNewsTest {
         int statusCode = response.getStatusCode();
         String success = response.jsonPath().getString("success");
 
+        softAssertions.assertThat(allHeaders).isNotNull();
         softAssertions.assertThat(id).isNotNull();
         softAssertions.assertThat(title).isNotNull();
         softAssertions.assertThat(description).isNotNull();
@@ -62,7 +58,6 @@ public class GetOneNewsTest {
         softAssertions.assertAll();
 
     }
-
     @Epic("GET /v1/news/find")
     @Feature("Negative test")
     @Test
@@ -87,4 +82,9 @@ public class GetOneNewsTest {
 
         softAssertions.assertAll();
     }
+
+
+
+
+
 }

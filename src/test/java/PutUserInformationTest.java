@@ -22,13 +22,13 @@ public class PutUserInformationTest {
         String inputEmail = "mustyacy@mail.ru";
         String inputPass = "123456789";
         String inputName = "mustyacy";
-        String inputAvatar = "src/main/resources/img.png";
+        String inputAvatar = "src/main/resources/picture.jpeg";
         String inputRole = "Boss";
 
-        @Story("Valid ReplaceUser.")
-        @Description(value = "ReplaceUser")
+        @Story("PUT /v1/user")
+        @Description("Positive test")
         @Test
-        public void ReplaceUserTest() {
+        public void putUserTest() {
             requestBody.put("email", inputEmail);
             requestBody.put("avatar", inputAvatar);
             requestBody.put("name", inputName);
@@ -73,14 +73,21 @@ public class PutUserInformationTest {
 
             softAssertions.assertAll();
         }
-        @Story("NotValid ReplaceUser.")
-        @Description(value = "ReplaceUser")
+        @Story("PUT /v1/user")
+        @Description("Negative test")
         @Test
-        public void unCorrectReplaceUserTest() {
-            requestBody.put("email", inputEmail);
-            requestBody.put("avatar", inputAvatar);
-            requestBody.put("name", inputName);
-            requestBody.put("role", inputRole);requestBody.put("password", inputPass);
+        public void putUserNegativeTest() {
+            String inputEmail1 = "mustyacy@mail.ru";
+            String inputPass1 = "123456789";
+            String inputName1 = "mustyacy";
+            String inputAvatar1 = "src/main/resources/picture.jpeg";
+            String inputRole1 = "Boss";
+
+            requestBody.put("email", inputEmail1);
+            requestBody.put("avatar", inputAvatar1);
+            requestBody.put("name", inputName1);
+            requestBody.put("role", inputRole1);
+            requestBody.put("password", inputPass1);
 
 
             request.header("Content-Type", "application/json");
