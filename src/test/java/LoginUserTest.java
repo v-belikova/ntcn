@@ -27,22 +27,38 @@ public class LoginUserTest {
     @Feature("Positive test")
     @Test
     public void loginUserTest() {
+        requestBody.put("avatar", userData.getAvatar());
+        requestBody.put("email", userData.getEmail());
+        requestBody.put("name", userData.getName());
+        requestBody.put("password", userData.getPassword());
+        requestBody.put("role", userData.getRole());
+
+        request.header("Content-Type", "application/json");
+        request.body(requestBody.toString());
+
+        Response response = request.log().all()
+                .post(routes.postRegistration)
+                .then()
+                .contentType(ContentType.JSON).log().all().extract().response();
 
 
-        requestBody.put("email", userData.getLoginEmail());
+        String email = (String) response.jsonPath().getMap("data").get("email");
+
+
+        requestBody.put("email", email);
         requestBody.put("password",userData.getPassword() );
 
         request.header("Content-Type", "application/json");
         request.body(requestBody.toString());
 
-        Response response = request
+        response = request
                 .post(routes.postLogin)
                 .then().log().all()
                 .contentType(ContentType.JSON).log().all().extract().response();
 
         methods.showBodyPostLogin(request, routes);
 
-        String email = (String) response.jsonPath().getMap("data").get("email");
+        String email1 = (String) response.jsonPath().getMap("data").get("email");
         String name = (String) response.jsonPath().getMap("data").get("name");
         String avatar = (String) response.jsonPath().getMap("data").get("avatar");
         String role = (String) response.jsonPath().getMap("data").get("role");
@@ -54,7 +70,7 @@ public class LoginUserTest {
         String success = response.jsonPath().getString("success");
         int customStatusCode = response.jsonPath().getInt("statusCode");
 
-        softAssertions.assertThat(email).isEqualTo(pojo.getEmail());
+        softAssertions.assertThat(email1).isEqualTo(pojo.getEmail());
         softAssertions.assertThat(name).isEqualTo(pojo.getName());
         softAssertions.assertThat(avatar).isEqualTo(pojo.getAvatar());
         softAssertions.assertThat(role).isEqualTo(pojo.getRole());
@@ -72,13 +88,31 @@ public class LoginUserTest {
     public void incorrectEmail1() {
 
 
-        requestBody.put("email", wrongEmail1);
+        requestBody.put("avatar", userData.getAvatar());
+        requestBody.put("email", userData.getEmail());
+        requestBody.put("name", userData.getName());
+        requestBody.put("password", userData.getPassword());
+        requestBody.put("role", userData.getRole());
+
+        request.header("Content-Type", "application/json");
+        request.body(requestBody.toString());
+
+        Response response = request.log().all()
+                .post(routes.postRegistration)
+                .then()
+                .contentType(ContentType.JSON).log().all().extract().response();
+
+
+        String email = (String) response.jsonPath().getMap("data").get("email");
+
+
+        requestBody.put("email", email);
         requestBody.put("password", password);
 
         request.header("Content-Type", "application/json");
         request.body(requestBody.toString());
 
-        Response response = request.post(routes.postLogin).then().
+        response = request.post(routes.postLogin).then().
                 contentType(ContentType.JSON).log().all().extract().response();
 
         methods.showBodyPostLogin(request, routes);
@@ -90,8 +124,8 @@ public class LoginUserTest {
 
         softAssertions.assertThat(400).isEqualTo(statusCode);
         softAssertions.assertThat("true").isEqualTo(success);
-        softAssertions.assertThat(errorCode.USER_EMAIL_NOT_VALID).isEqualTo(customStatusCode);
-        softAssertions.assertThat(errorCode.USER_EMAIL_NOT_VALID).isEqualTo(codes);
+        softAssertions.assertThat(errorCode.PASSWORD_NOT_VALID).isEqualTo(customStatusCode);
+        softAssertions.assertThat(errorCode.PASSWORD_NOT_VALID).isEqualTo(codes);
 
         softAssertions.assertAll();
     }

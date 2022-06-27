@@ -1,15 +1,9 @@
-import io.qameta.allure.internal.shadowed.jackson.annotation.JsonIgnoreProperties;
+
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class NewsId {
 
-    public int getId() {
-        return id;
+        private int id;
     }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    private int id;
-}

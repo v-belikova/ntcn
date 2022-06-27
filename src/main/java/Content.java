@@ -10,7 +10,7 @@ import java.util.ArrayList;
         String image;
         String userId;
         String username;
-         ArrayList<Content> content;
+         ArrayList<Content> content = new ArrayList<>();
 
 
         Integer numberOfElements;
