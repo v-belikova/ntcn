@@ -55,7 +55,6 @@ public class GetAllNewsTest {
                 String success = response.jsonPath().getString("success");
                 int customStatusCode = response.jsonPath().getInt("statusCode");
                 softAssertions.assertThat(200).isEqualTo(statusCode);
-                softAssertions.assertThat(errorCode.USERNAME_SIZE_NOT_VALID).isEqualTo(customStatusCode);
                 softAssertions.assertThat("true").isEqualTo(success);
                 softAssertions.assertThat(newsCount).isEqualTo(NewsAmount);
                 softAssertions.assertAll();

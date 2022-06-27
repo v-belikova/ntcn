@@ -32,7 +32,7 @@ public class GetInfoUserTest {
                     .extract().response();
 
 
-            methods.showBodyPostLogin(request, routes);
+           
             String email = (String) response.jsonPath().getMap("data").get("email");
             String name = (String) response.jsonPath().getMap("data").get("name");
             String avatar = (String) response.jsonPath().getMap("data").get("avatar");
@@ -52,7 +52,7 @@ public class GetInfoUserTest {
             softAssertions.assertThat(idUser).isNotNull();
             softAssertions.assertThat(200).isEqualTo(statusCode);
             softAssertions.assertThat("true").isEqualTo(success);
-            softAssertions.assertThat(errorCode.USERNAME_SIZE_NOT_VALID).isEqualTo(customStatusCode);
+
 
             softAssertions.assertAll();
 

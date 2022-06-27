@@ -73,7 +73,6 @@ public class RegistrationUserTest {
         softAssertions.assertThat(tokenUser).isNotNull();
         softAssertions.assertThat(200).isEqualTo(statusCode);
         softAssertions.assertThat("true").isEqualTo(success);
-        softAssertions.assertThat(errorCode.USERNAME_SIZE_NOT_VALID).isEqualTo(customStatusCode);
 
         softAssertions.assertAll();
     }

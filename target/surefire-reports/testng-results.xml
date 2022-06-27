@@ -2,120 +2,120 @@
 <testng-results ignored="0" total="23" passed="23" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-27T14:32:53 MSK" name="Command line suite" finished-at="2022-06-27T14:33:16 MSK" duration-ms="22876">
+  <suite started-at="2022-06-27T18:05:37 MSK" name="Command line suite" finished-at="2022-06-27T18:05:53 MSK" duration-ms="15730">
     <groups>
     </groups>
-    <test started-at="2022-06-27T14:32:53 MSK" name="Command line test" finished-at="2022-06-27T14:33:16 MSK" duration-ms="22876">
+    <test started-at="2022-06-27T18:05:37 MSK" name="Command line test" finished-at="2022-06-27T18:05:53 MSK" duration-ms="15730">
       <class name="PutUserInformationTest">
-        <test-method signature="putUserNegativeTest()[pri:0, instance:PutUserInformationTest@52c8295b]" started-at="2022-06-27T14:33:03 MSK" name="putUserNegativeTest" finished-at="2022-06-27T14:33:03 MSK" duration-ms="230" status="PASS">
+        <test-method signature="putUserNegativeTest()[pri:0, instance:PutUserInformationTest@52c8295b]" started-at="2022-06-27T18:05:45 MSK" name="putUserNegativeTest" finished-at="2022-06-27T18:05:45 MSK" duration-ms="178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- putUserNegativeTest -->
-        <test-method signature="putUserTest()[pri:0, instance:PutUserInformationTest@52c8295b]" started-at="2022-06-27T14:33:03 MSK" name="putUserTest" finished-at="2022-06-27T14:33:03 MSK" duration-ms="456" status="PASS">
+        <test-method signature="putUserTest()[pri:0, instance:PutUserInformationTest@52c8295b]" started-at="2022-06-27T18:05:45 MSK" name="putUserTest" finished-at="2022-06-27T18:05:46 MSK" duration-ms="443" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- putUserTest -->
       </class> <!-- PutUserInformationTest -->
       <class name="CreateNewsTest">
-        <test-method signature="createNewsNegativeTest()[pri:0, instance:CreateNewsTest@52d10fb8]" started-at="2022-06-27T14:33:13 MSK" name="createNewsNegativeTest" finished-at="2022-06-27T14:33:14 MSK" duration-ms="437" status="PASS">
+        <test-method signature="createNewsNegativeTest()[pri:0, instance:CreateNewsTest@52d10fb8]" started-at="2022-06-27T18:05:50 MSK" name="createNewsNegativeTest" finished-at="2022-06-27T18:05:51 MSK" duration-ms="331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewsNegativeTest -->
-        <test-method signature="createNewsTest()[pri:0, instance:CreateNewsTest@52d10fb8]" started-at="2022-06-27T14:33:14 MSK" name="createNewsTest" finished-at="2022-06-27T14:33:14 MSK" duration-ms="392" status="PASS">
+        <test-method signature="createNewsTest()[pri:0, instance:CreateNewsTest@52d10fb8]" started-at="2022-06-27T18:05:51 MSK" name="createNewsTest" finished-at="2022-06-27T18:05:51 MSK" duration-ms="343" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewsTest -->
       </class> <!-- CreateNewsTest -->
       <class name="GetOneNewsTest">
-        <test-method signature="GetOneNegativeNotValidURLNews()[pri:0, instance:GetOneNewsTest@49a64d82]" started-at="2022-06-27T14:32:53 MSK" name="GetOneNegativeNotValidURLNews" finished-at="2022-06-27T14:32:56 MSK" duration-ms="2887" status="PASS">
+        <test-method signature="GetOneNegativeNotValidURLNews()[pri:0, instance:GetOneNewsTest@49a64d82]" started-at="2022-06-27T18:05:37 MSK" name="GetOneNegativeNotValidURLNews" finished-at="2022-06-27T18:05:40 MSK" duration-ms="2587" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetOneNegativeNotValidURLNews -->
-        <test-method signature="GetOneNews()[pri:0, instance:GetOneNewsTest@49a64d82]" started-at="2022-06-27T14:32:56 MSK" name="GetOneNews" finished-at="2022-06-27T14:32:58 MSK" duration-ms="1818" status="PASS">
+        <test-method signature="GetOneNews()[pri:0, instance:GetOneNewsTest@49a64d82]" started-at="2022-06-27T18:05:40 MSK" name="GetOneNews" finished-at="2022-06-27T18:05:41 MSK" duration-ms="1806" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetOneNews -->
       </class> <!-- GetOneNewsTest -->
       <class name="NewControllerTest">
-        <test-method signature="FilePostNegativeTest()[pri:0, instance:NewControllerTest@4d9d1b69]" started-at="2022-06-27T14:33:02 MSK" name="FilePostNegativeTest" finished-at="2022-06-27T14:33:02 MSK" duration-ms="448" status="PASS">
+        <test-method signature="FilePostNegativeTest()[pri:0, instance:NewControllerTest@4d9d1b69]" started-at="2022-06-27T18:05:44 MSK" name="FilePostNegativeTest" finished-at="2022-06-27T18:05:45 MSK" duration-ms="371" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FilePostNegativeTest -->
-        <test-method signature="FilePostTest()[pri:0, instance:NewControllerTest@4d9d1b69]" started-at="2022-06-27T14:33:02 MSK" name="FilePostTest" finished-at="2022-06-27T14:33:03 MSK" duration-ms="333" status="PASS">
+        <test-method signature="FilePostTest()[pri:0, instance:NewControllerTest@4d9d1b69]" started-at="2022-06-27T18:05:45 MSK" name="FilePostTest" finished-at="2022-06-27T18:05:45 MSK" duration-ms="303" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FilePostTest -->
       </class> <!-- NewControllerTest -->
       <class name="LoginUserTest">
-        <test-method signature="incorrectEmail1()[pri:0, instance:LoginUserTest@77b21474]" started-at="2022-06-27T14:33:11 MSK" name="incorrectEmail1" finished-at="2022-06-27T14:33:12 MSK" duration-ms="1629" status="PASS">
+        <test-method signature="incorrectEmail1()[pri:0, instance:LoginUserTest@77b21474]" started-at="2022-06-27T18:05:49 MSK" name="incorrectEmail1" finished-at="2022-06-27T18:05:50 MSK" duration-ms="669" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- incorrectEmail1 -->
-        <test-method signature="loginUserTest()[pri:0, instance:LoginUserTest@77b21474]" started-at="2022-06-27T14:33:12 MSK" name="loginUserTest" finished-at="2022-06-27T14:33:13 MSK" duration-ms="834" status="PASS">
+        <test-method signature="loginUserTest()[pri:0, instance:LoginUserTest@77b21474]" started-at="2022-06-27T18:05:50 MSK" name="loginUserTest" finished-at="2022-06-27T18:05:50 MSK" duration-ms="688" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginUserTest -->
       </class> <!-- LoginUserTest -->
       <class name="RegistrationUserTest">
-        <test-method signature="correctReg()[pri:0, instance:RegistrationUserTest@344561e0]" started-at="2022-06-27T14:32:58 MSK" name="correctReg" finished-at="2022-06-27T14:32:59 MSK" duration-ms="868" status="PASS">
+        <test-method signature="correctReg()[pri:0, instance:RegistrationUserTest@344561e0]" started-at="2022-06-27T18:05:41 MSK" name="correctReg" finished-at="2022-06-27T18:05:42 MSK" duration-ms="905" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- correctReg -->
-        <test-method signature="incorrectEmail1()[pri:0, instance:RegistrationUserTest@344561e0]" started-at="2022-06-27T14:32:59 MSK" name="incorrectEmail1" finished-at="2022-06-27T14:33:00 MSK" duration-ms="406" status="PASS">
+        <test-method signature="incorrectEmail1()[pri:0, instance:RegistrationUserTest@344561e0]" started-at="2022-06-27T18:05:42 MSK" name="incorrectEmail1" finished-at="2022-06-27T18:05:43 MSK" duration-ms="333" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- incorrectEmail1 -->
-        <test-method signature="incorrectPassword()[pri:0, instance:RegistrationUserTest@344561e0]" started-at="2022-06-27T14:33:00 MSK" name="incorrectPassword" finished-at="2022-06-27T14:33:00 MSK" duration-ms="312" status="PASS">
+        <test-method signature="incorrectPassword()[pri:0, instance:RegistrationUserTest@344561e0]" started-at="2022-06-27T18:05:43 MSK" name="incorrectPassword" finished-at="2022-06-27T18:05:43 MSK" duration-ms="312" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- incorrectPassword -->
       </class> <!-- RegistrationUserTest -->
       <class name="PutNewsTest">
-        <test-method signature="putNewsNegativeTest()[pri:0, instance:PutNewsTest@66d23e4a]" started-at="2022-06-27T14:33:00 MSK" name="putNewsNegativeTest" finished-at="2022-06-27T14:33:00 MSK" duration-ms="619" status="PASS">
+        <test-method signature="putNewsNegativeTest()[pri:0, instance:PutNewsTest@66d23e4a]" started-at="2022-06-27T18:05:43 MSK" name="putNewsNegativeTest" finished-at="2022-06-27T18:05:44 MSK" duration-ms="559" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- putNewsNegativeTest -->
-        <test-method signature="putNewsTest()[pri:0, instance:PutNewsTest@66d23e4a]" started-at="2022-06-27T14:33:00 MSK" name="putNewsTest" finished-at="2022-06-27T14:33:01 MSK" duration-ms="626" status="PASS">
+        <test-method signature="putNewsTest()[pri:0, instance:PutNewsTest@66d23e4a]" started-at="2022-06-27T18:05:44 MSK" name="putNewsTest" finished-at="2022-06-27T18:05:44 MSK" duration-ms="533" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- putNewsTest -->
       </class> <!-- PutNewsTest -->
       <class name="DeleteNewsTest">
-        <test-method signature="deleteNewsNegativeTest()[pri:0, instance:DeleteNewsTest@1fe8d51b]" started-at="2022-06-27T14:33:15 MSK" name="deleteNewsNegativeTest" finished-at="2022-06-27T14:33:16 MSK" duration-ms="557" status="PASS">
+        <test-method signature="deleteNewsNegativeTest()[pri:0, instance:DeleteNewsTest@1fe8d51b]" started-at="2022-06-27T18:05:52 MSK" name="deleteNewsNegativeTest" finished-at="2022-06-27T18:05:52 MSK" duration-ms="454" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteNewsNegativeTest -->
-        <test-method signature="deleteNewsTest()[pri:0, instance:DeleteNewsTest@1fe8d51b]" started-at="2022-06-27T14:33:16 MSK" name="deleteNewsTest" finished-at="2022-06-27T14:33:16 MSK" duration-ms="787" status="PASS">
+        <test-method signature="deleteNewsTest()[pri:0, instance:DeleteNewsTest@1fe8d51b]" started-at="2022-06-27T18:05:52 MSK" name="deleteNewsTest" finished-at="2022-06-27T18:05:53 MSK" duration-ms="561" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteNewsTest -->
       </class> <!-- DeleteNewsTest -->
       <class name="GetAllNewsTest">
-        <test-method signature="allNewsPageGetNegativeTest()[pri:0, instance:GetAllNewsTest@251f7d26]" started-at="2022-06-27T14:33:03 MSK" name="allNewsPageGetNegativeTest" finished-at="2022-06-27T14:33:06 MSK" duration-ms="2439" status="PASS">
+        <test-method signature="allNewsPageGetNegativeTest()[pri:0, instance:GetAllNewsTest@251f7d26]" started-at="2022-06-27T18:05:46 MSK" name="allNewsPageGetNegativeTest" finished-at="2022-06-27T18:05:48 MSK" duration-ms="1867" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allNewsPageGetNegativeTest -->
-        <test-method signature="allNewsPageGetTest()[pri:0, instance:GetAllNewsTest@251f7d26]" started-at="2022-06-27T14:33:06 MSK" name="allNewsPageGetTest" finished-at="2022-06-27T14:33:11 MSK" duration-ms="5003" status="PASS">
+        <test-method signature="allNewsPageGetTest()[pri:0, instance:GetAllNewsTest@251f7d26]" started-at="2022-06-27T18:05:48 MSK" name="allNewsPageGetTest" finished-at="2022-06-27T18:05:49 MSK" duration-ms="1303" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- allNewsPageGetTest -->
       </class> <!-- GetAllNewsTest -->
       <class name="DeleteUserTest">
-        <test-method signature="deleteUserNegativeTest()[pri:0, instance:DeleteUserTest@41c07648]" started-at="2022-06-27T14:33:14 MSK" name="deleteUserNegativeTest" finished-at="2022-06-27T14:33:14 MSK" duration-ms="380" status="PASS">
+        <test-method signature="deleteUserNegativeTest()[pri:0, instance:DeleteUserTest@41c07648]" started-at="2022-06-27T18:05:51 MSK" name="deleteUserNegativeTest" finished-at="2022-06-27T18:05:51 MSK" duration-ms="338" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteUserNegativeTest -->
-        <test-method signature="deleteUserTest()[pri:0, instance:DeleteUserTest@41c07648]" started-at="2022-06-27T14:33:14 MSK" name="deleteUserTest" finished-at="2022-06-27T14:33:15 MSK" duration-ms="631" status="PASS">
+        <test-method signature="deleteUserTest()[pri:0, instance:DeleteUserTest@41c07648]" started-at="2022-06-27T18:05:51 MSK" name="deleteUserTest" finished-at="2022-06-27T18:05:52 MSK" duration-ms="312" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteUserTest -->
       </class> <!-- DeleteUserTest -->
       <class name="GetInfoUserTest">
-        <test-method signature="GetUserInfoById()[pri:0, instance:GetInfoUserTest@36ac8a63]" started-at="2022-06-27T14:33:01 MSK" name="GetUserInfoById" finished-at="2022-06-27T14:33:02 MSK" duration-ms="473" status="PASS">
+        <test-method signature="GetUserInfoById()[pri:0, instance:GetInfoUserTest@36ac8a63]" started-at="2022-06-27T18:05:44 MSK" name="GetUserInfoById" finished-at="2022-06-27T18:05:44 MSK" duration-ms="249" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetUserInfoById -->
-        <test-method signature="GetUserInfoByIdNegative()[pri:0, instance:GetInfoUserTest@36ac8a63]" started-at="2022-06-27T14:33:02 MSK" name="GetUserInfoByIdNegative" finished-at="2022-06-27T14:33:02 MSK" duration-ms="169" status="PASS">
+        <test-method signature="GetUserInfoByIdNegative()[pri:0, instance:GetInfoUserTest@36ac8a63]" started-at="2022-06-27T18:05:44 MSK" name="GetUserInfoByIdNegative" finished-at="2022-06-27T18:05:44 MSK" duration-ms="148" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GetUserInfoByIdNegative -->
